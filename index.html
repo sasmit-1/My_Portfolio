@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -422,6 +422,48 @@ footer{padding:2rem 3rem;display:flex;justify-content:space-between;align-items:
     <div class="proj-right">
       <div class="proj-type">REPOSITORY</div>
       <svg class="proj-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </div>
+    <div class="mag-glow"></div>
+  </a>
+
+  <a href="https://github.com/sasmit-1/ADBLK" target="_blank" class="project-card" id="pc-6">
+    <div class="proj-index" style="color:#fb923c">07</div>
+    <div class="proj-info">
+      <div class="proj-info-title">Ablck - By Sasmit Mondal</div>
+      <p class="proj-info-desc">Aggressive adblocker equipped with custom CSS selectors and network-level rules. Skips YouTube ads and neutralizes ads on manga, anime, and streaming sites.</p>
+      <div class="proj-tags"><span class="proj-tag">JavaScript</span><span class="proj-tag">Browser Extension</span><span class="proj-tag">CSS</span></div>
+    </div>
+    <div class="proj-right">
+      <div class="proj-type">REPOSITORY</div>
+      <svg class="proj-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </div>
+    <div class="mag-glow"></div>
+  </a>
+
+  <a href="https://github.com/sasmit-1/GhostDrivers" target="_blank" class="project-card" id="pc-7">
+    <div class="proj-index" style="color:#8b5cf6">08</div>
+    <div class="proj-info">
+      <div class="proj-info-title">GhostDrivers <span style="font-size:0.4em; vertical-align:middle; background:rgba(255,255,255,.05); padding:2px 6px; border-radius:4px; margin-left:6px; letter-spacing:0.1em; font-family:'JetBrains Mono',monospace; opacity:0.8;">WIP</span></div>
+      <p class="proj-info-desc">Reinforcement learning agent (PPO model) trained to navigate autonomous vehicles. Features advanced point system logic and stable episode reward signals.</p>
+      <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">RL</span><span class="proj-tag">PPO</span></div>
+    </div>
+    <div class="proj-right">
+      <div class="proj-type">REPOSITORY</div>
+      <svg class="proj-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </div>
+    <div class="mag-glow"></div>
+  </a>
+
+  <a href="https://github.com/sasmit-1/QTShield" target="_blank" class="project-card" id="pc-8">
+    <div class="proj-index" style="color:#10b981">09</div>
+    <div class="proj-info">
+      <div class="proj-info-title">QTShield <span style="font-size:0.4em; vertical-align:middle; background:rgba(255,255,255,.05); padding:2px 6px; border-radius:4px; margin-left:6px; letter-spacing:0.1em; font-family:'JetBrains Mono',monospace; opacity:0.8;">CONCEPT</span></div>
+      <p class="proj-info-desc">Multi-device Quantum Key Distribution (BB84) simulation. Demonstrates real-time distributed synchronization using Flask-SocketIO and WebSocket interfaces.</p>
+      <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Flask-SocketIO</span><span class="proj-tag">Quantum Demo</span></div>
+    </div>
+    <div class="proj-right">
+      <div class="proj-type">REPOSITORY</div>
+      <svg class="proj-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
     </div>
     <div class="mag-glow"></div>
   </a>
@@ -882,7 +924,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Stats counter
 function countUp(id,target,suffix){const el=document.getElementById(id);if(!el)return;ScrollTrigger.create({trigger:el,start:'top 85%',once:true,onEnter:()=>{let s=null;const dur=1500;function step(ts){if(!s)s=ts;const p=Math.min(1,(ts-s)/dur);el.innerHTML=Math.floor(p*target)+'<span>'+suffix+'</span>';if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}});}
-countUp('s1',6,'+');countUp('s2',4,'+');countUp('s3',3,'rd');
+countUp('s1',9,'+');countUp('s2',4,'+');countUp('s3',3,'rd');
 
 // Reveal elements
 gsap.utils.toArray('.rv').forEach(el=>{gsap.to(el,{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 87%',once:true}});});
